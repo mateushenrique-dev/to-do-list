@@ -1,0 +1,57 @@
+.taskListItem {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  font-size: .875rem;
+  padding: 1.125rem 1rem;
+  border-radius: 8px;
+}
+
+.taskListCheck {
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.taskListDelete {
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.taskListDelete svg {
+  color: var(--gray-300);
+  transition: 0.1s;
+}
+
+.taskListDelete svg:hover {
+  filter: opacity(0.7);
+}
+
+.taskListDone .taskListCheck, .taskListCheck:hover  {
+  background: var(--purple-dark);
+}
+
+
+.taskListDone .taskListCheck::before {
+  content: "\2714";
+  color: var(--gray-100);
+  font-size: .625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskListDone .taskListText {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}

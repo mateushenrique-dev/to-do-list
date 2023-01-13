@@ -1,0 +1,13 @@
+.newTask {
+  max-width: 756px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: -1.6875rem auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .newTask {
+    padding: 0 2rem;
+  }
+}
